@@ -1,0 +1,265 @@
+/* Fuentes tipografia */
+@font-face {
+    font-family: Dragon;
+    src: url(../assets/fonts/PowerOfDragonRegular-axZom.woff);
+    src: url(../assets/fonts/PowerOfDragonRegular-axZom.woff2);
+}
+
+/* Reseteo del html */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Dragon;
+
+}
+body{
+    background-color:#303030;
+}
+
+
+/* Uso de grid para main */
+
+.titulos{
+    font-family: Dragon;
+    font-size: 28px;
+    font-weight: bold;
+    color:#FFEB3B;
+    text-align: center;
+}
+
+/* Organizacion de hipervinculos */
+a{
+    text-decoration: none;
+    color:#FFEB3B;
+}
+
+/* Arreglo de lista nav y titulo*/
+.navegacion{
+    list-style: none;
+    background-color:#212121;
+    text-align: center;
+    border: 2px solid;
+}
+/* Organizar menu de manera horizontal */
+nav .navegacion{
+    display: flex;
+    gap: 3em;
+    font-size: 1em;
+    justify-content: center;
+} 
+
+
+/* separacion a traves de grids */
+
+.grid-elementos-visuales section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    padding: 20px;
+    height: auto;
+}
+
+
+/* Estilos de imagen y video */
+.grid-item-index img, .grid-item-index video{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border: 3px solid #62159E;
+    
+}   
+
+/* Formato de los parrafos */
+.parrafos{
+    text-align: center;
+    color:#FFFFFF;
+    background: linear-gradient(#FF7043,#D32F2F);
+    font-size: 1rem; 
+}
+
+
+.pie-de-pagina{
+    text-align: center;
+    color: #B0BEC5;
+}
+
+
+/* Seccion de armas */
+.armas{ /*contenedor de las armas */
+    text-align: center;
+}
+
+/* Formato para titulos h2 de armas, personajes, trivias y galeria */
+.name-personaje, .name-armas, .titulos-trivia,.contraste-oscuro, .titulos-curiosidades{
+    text-align: center;
+    font-size: 25px;
+    color: azure;
+    background:linear-gradient(#4B0082, #A855F7);
+    margin-top: 0.2em;
+}
+
+
+/* Formato para parrafos de la trivia */
+.trivia p{
+    color:whitesmoke;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+/* Formato para el arreglo de la lista de respuestas */
+.respuestas-trivias, .descripcion-curiosidad{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 19px;
+}
+
+
+.galeria-uno, .galeria-dos{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.imagenes-galeria img{
+    width: 30%;
+    height: auto;
+    box-shadow: 20px -10px 20px #00FFAB;
+    margin-bottom: 10px;
+}
+/* estilos armas y gadgets  */
+
+nav .navegacion {
+    padding:1em;
+}
+
+main .banner p{
+    padding:10px;
+    margin-top:8px;
+    margin-bottom: 8px;
+}
+
+/* estilo para la seccion de armas de las armas */
+
+main .armas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+/* estilos para los contenedores y textos con flex */
+main .armas .item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 10px;
+}
+main .armas .item img{
+    width: 100%;
+    height: 60vh;
+    border-radius: 50%;
+}
+
+/* espaciado entre imagenes y textos */
+main .armas .item img,main .armas .item h2{
+    margin-bottom: 35px;
+
+}
+
+main .armas .grid-item-3 p{
+    padding: 12px;
+}
+
+/* Formato de los titulos */
+main .armas .item h2{
+    border-radius:10px;
+}
+
+/* Ocultar imagen 4  */
+main .armas .grid-item-4 {
+    display: none;
+}
+
+
+
+/* estilos para mobile */
+
+@media screen and (min-width:360px) and (max-width:600px){
+    nav .navegacion{
+        padding-right:30px;
+        gap:2em;
+    }
+
+    .grid-elementos-visuales section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+
+    .grid-item-index{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .grid-item-index img, .grid-item-index video{
+        max-width: 100%;
+        height: 60vh;
+        border: 3px solid #62159E;
+    }
+    
+    /*Seccion de armas */
+    main .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    /* Restrablecer item 4 */
+    main .grid-container .grid-item-4{
+        display: block;
+    }
+}
+
+/* Estilos para tablet */
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    main .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main .grid-container .grid-item-4{
+        display: block;
+    }
+    /* Index */
+    
+    .grid-elementos-visuales {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .grid-elementos-visuales section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-elementos-visuales section div p{
+        margin: 3px 0;
+    } 
+
+    .grid-elementos-visuales section div img,.grid-elementos-visuales section div video {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    
+    }
+}
