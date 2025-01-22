@@ -115,6 +115,9 @@ nav .navegacion{
     color: whitesmoke;
     font-size: 19px;
 }
+main div .respuestas-trivias{
+    padding:50px;
+}
 
 main .imagenes-galeria div{
     display: flex;
