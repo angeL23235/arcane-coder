@@ -116,8 +116,11 @@ nav .navegacion{
     font-size: 19px;
 }
 
+main .imagenes-galeria div{
+    padding: 20px;
+}
 
-.galeria-uno, .galeria-dos{
+main section .galeria-uno, main section .galeria-dos{
     display: flex;
     width: 100%;
     height: auto;
@@ -126,11 +129,10 @@ nav .navegacion{
     gap: 20px;
 }
 
-.imagenes-galeria img{
+main section .galeria-uno img,main section .galeria-dos img{
+    box-shadow: 15px 12px 20px aqua;
     width: 30%;
-    height: auto;
-    box-shadow: 20px -10px 20px #00FFAB;
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
 }
 /* estilos armas y gadgets  */
 
@@ -185,11 +187,66 @@ main .armas .grid-item-4 {
     display: none;
 }
 
+/* Estilos para la pagina de personajes */
+/* division de section en columnas */
+main .personajes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+/* alineamiento de contenido dentro del div con flex */
+main .personajes div {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 20px;
+    padding: 2rem;
+}
+
+/* box shadow aplicado a la imagen y su parrafo */
+main .personajes div img, main .personajes div p{
+    box-shadow: 20px 2px 50px red ;
+}
+
+main .personajes div img{
+    object-fit: cover;
+    aspect-ratio: 20/19;
+    width: 100%;
+}
 
 
+/*Estilos para la pagina trivias y curiosidades  */
+.main-trivia div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    box-shadow: 10px 20px 40px black;
+}
+
+.main-trivia div img{
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/16;
+    
+}
+.main-trivia{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 40px;
+    gap: 30px;
+}
+
+.main-trivia ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
+}   
 /* estilos para mobile */
 
-@media screen and (min-width:360px) and (max-width:600px){
+@media screen and (min-width:320px) and (max-width:600px){
     nav .navegacion{
         padding-right:30px;
         gap:2em;
@@ -214,7 +271,7 @@ main .armas .grid-item-4 {
 
     .grid-item-index img, .grid-item-index video{
         max-width: 100%;
-        height: 60vh;
+        height: auto;
         border: 3px solid #62159E;
     }
     
@@ -231,7 +288,7 @@ main .armas .grid-item-4 {
 
 /* Estilos para tablet */
 
-@media screen and (min-width:768px) and (max-width:1024px){
+@media screen and (min-width:767px) and (max-width:1024px){
     main .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -241,11 +298,6 @@ main .armas .grid-item-4 {
         display: block;
     }
     /* Index */
-    
-    .grid-elementos-visuales {
-        width: 100%;
-        height: 90vh;
-    }
 
     .grid-elementos-visuales section{
         display: grid;
@@ -259,7 +311,8 @@ main .armas .grid-item-4 {
     .grid-elementos-visuales section div img,.grid-elementos-visuales section div video {
         display: flex;
         flex-direction: column;
-        gap: 30px;
-    
-    }
+        gap: 20px;
+        object-fit: cover;
+
+    }   
 }

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css" />
   <title>Datos curiosos</title>
@@ -48,42 +48,43 @@
   </header>
 
   <!-- Seccion principal-->
-  <main>
-    <!-- Banner de trivia -->
-    <section class="banner">
-      <p class="parrafos">Trivias</p>
-    </section>
+  <section class="banner">
+    <p class="parrafos">Trivias y curiosidades</p>
+  </section>
 
+  <main class="main-trivia">
+    <!-- Banner de trivia -->
     <!-- Seccion de trivia -->
-    <section class="trivia">
+    <div>
       <h2 class="titulos-trivia">¿Cual es el nombre de la ciudad donde se desarrolla la mayoría de los eventos de
         Arcane?</h2>
+      <img src="../assets/img/pregunta1.webp" alt="respuesta en imagen 'Piltover'">
       <ul class="respuestas-trivias">
-        <li>a: Zaun</li>
-        <li>b: Piltover</li>
-        <li>c: Noxus</li>
-        <li>d: Ionia</li>
+        <li class="trivia-respuesta">a: Zaun</li>
+        <li class="trivia-respuesta">b: Piltover</li>
+        <li class="trivia-respuesta">c: Noxus</li>
+        <li class="trivia-respuesta">d: Ionia</li>
       </ul>
-      <img src="../assets/img/pregunta1.webp" alt="respuesta Piltover">
-    </section>
+    </div>
 
-    <section class="banner">
-      <p class="parrafos">Curiosidades</p>
-    </section>
 
     <!-- Curiosidades -->
-    <section class="curiosidades">
+
+    <div>
       <h2 class="titulos-curiosidades">1-Inspiración en el arte y el cine</h2>
-      <img src="../assets/img/curiosidad1.jpg" alt="vi imagen premier">
+      <img src="../assets/img/curiosidad1.jpg" alt="vi personaje de arcane imagen premier de la serie">
       <p class="descripcion-curiosidad">
         Los creadores de Arcane mencionaron que se inspiraron en varias obras de cine y arte para crear el estilo visual
         y narrativo de la serie. En particular, la influencia del cine de animación como Spider-Man: Into the
         Spider-Verse y las películas de Studio Ghibli se puede ver en el uso del color y el detalle de la animación.
         Esto contribuyó a darle a Arcane una atmósfera única que se distingue de otros programas de animación.
       </p>
+    </div>
 
+
+    <div>
       <h2 class="titulos-curiosidades">2-Éxito crítico y popularidad</h2>
-      <img src="../assets/img/curiosidad2.webp" alt="imagen de jinx popularidad">
+      <img src="../assets/img/curiosidad2.webp" alt="imagen de jinx personaje arcane popularidad">
       <p class="descripcion-curiosidad">
         Arcane fue muy bien recibida tanto por la crítica como por los fanáticos. Fue aclamada por su animación,
         narrativa, desarrollo de personajes y música. La serie no solo atrajo a jugadores de League of Legends, sino que
@@ -91,7 +92,7 @@
         nominada y ganara premios, incluidos premios en los Annie Awards y reconocimiento en varias plataformas de
         streaming y siendo recordada por el iconico personaje powder más conocida como jinx.
       </p>
-    </section>
+    </div>
   </main>
 
   <!-- FOOTER -->
