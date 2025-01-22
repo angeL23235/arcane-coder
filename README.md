@@ -14,29 +14,6 @@ Este proyecto está inspirado en la popular serie *Arcane*. Es un sitio web inte
 Las páginas del proyecto que están diseñadas para ser completamente **responsivas** (adaptables a diferentes tamaños de pantalla) son:
 
 - `index.html`: Página principal que da la bienvenida al proyecto.
-- `armas.html`: Página dedicada a mostrar información sobre las armas en el universo de *Arcane*.
+- `armas.html`: Página dedicada a mostrar información sobre las armas en el universo de *Arcane*..
 
-Ambas páginas están optimizadas para ofrecer una experiencia de usuario fluida en dispositivos móviles, tabletas y escritorios.
-
-## Instalación
-
-1. Clona este repositorio en tu máquina local:
-    ```bash
-    git clone https://github.com/angeL23235/arcane_coder.git
-    ```
-
-2. Accede a la carpeta del proyecto:
-    ```bash
-    cd arcane_coder
-    ```
-
-3. Abre el archivo `index.html` en tu navegador para ver el proyecto en acción.
-
-## Contribución
-
-Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar un pull request. Tu participación será bienvenida.
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
 
