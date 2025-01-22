@@ -117,22 +117,23 @@ nav .navegacion{
 }
 
 main .imagenes-galeria div{
-    padding: 20px;
-}
-
-main section .galeria-uno, main section .galeria-dos{
     display: flex;
     width: 100%;
     height: auto;
     justify-content: space-around;
     align-items: stretch;
     gap: 20px;
+  
+}
+main .imagenes-galeria div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
-main section .galeria-uno img,main section .galeria-dos img{
-    box-shadow: 15px 12px 20px aqua;
-    width: 30%;
-    margin-bottom: 2rem;
+main .imagenes-galeria img{
+    filter: drop-shadow(10px 10px 15px aqua);
+    width: 100%;
+    padding: 2.2rem;
 }
 /* estilos armas y gadgets  */
 
@@ -245,7 +246,6 @@ main .personajes div img{
     gap: 40px;
 }   
 /* estilos para mobile */
-
 @media screen and (min-width:320px) and (max-width:600px){
     nav .navegacion{
         padding-right:30px;
@@ -284,6 +284,37 @@ main .personajes div img{
     main .grid-container .grid-item-4{
         display: block;
     }
+
+    /* pagina de personajes */
+    main .personajes{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* pagina de trivia y curiosidades */
+    .main-trivia{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+
+    /* pagina de galeria */
+
+    .main-galeria section div {
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        height: 100vh;
+        width: 100%;
+        
+    }
+
+    .main-galeria section div img{
+        display: flex;
+        aspect-ratio: 20/18;
+        width: 100%;
+        object-fit: cover;
+    }
+
 }
 
 /* Estilos para tablet */
