@@ -15,3 +15,17 @@ Las páginas del proyecto que están diseñadas para ser completamente **respons
 
 - `index.html`: Página principal que da la bienvenida al proyecto.
 - `armas.html`: Página dedicada a mostrar información sobre las armas en el universo de *Arcane*.
+
+## Código para los Logos
+
+Si deseas agregar los logos con tamaño reducido, puedes hacerlo con el siguiente código:
+
+```html
+<!-- Logo HTML -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" style="width: 30px; height: auto;">
+<!-- Logo CSS -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS Logo" style="width: 30px; height: auto;">
+<!-- Logo Git -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Git-logo.svg" alt="Git Logo" style="width: 30px; height: auto;">
+<!-- Logo GitHub -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Octicons-mark-github.svg" alt="GitHub Logo" style="width: 30px; height: auto;">
