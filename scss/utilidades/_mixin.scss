@@ -1,0 +1,8 @@
+// mixin para border
+@mixin border($px, $style, $color){
+    border:$px,$style,$color;
+};
+
+@mixin flex($display, $justify, $align){
+    
+};

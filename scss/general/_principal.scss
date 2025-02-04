@@ -1,0 +1,26 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+.titulos{
+    font-size: 28px;
+    font-weight: bold;
+    color:$yellowColor;
+    text-align: $text-align;
+}
+/*organizacion de hipervinculos*/
+a{
+    text-decoration: none;
+    color: $yellowColor;
+}
+
+.navegacion{
+    list-style: none;
+    background-color: $black;
+    text-align: $text-align;
+    @include border(2px, solid,trasnparent);
+}
+nav{
+    .navegacion{
+        
+    }
+}

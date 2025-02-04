@@ -1,0 +1,17 @@
+/* Fuentes tipografia */
+@font-face {
+    font-family: Dragon;
+    src: url(../assets/fonts/PowerOfDragonRegular-axZom.woff);
+    src: url(../assets/fonts/PowerOfDragonRegular-axZom.woff2);
+}
+
+/* Reseteo del html */
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Dragon;
+}
+
+body{
+    background-color:#303030;
+}
