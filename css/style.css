@@ -284,10 +284,15 @@ main .imagenes-galeria img {
   }
 }
 /*Estilos para tableta*/
-@media screen and (min-width: 767px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1080px) {
   main .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  nav .navegacion {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
   }
   main .grid-container .grid-item-4 {
     display: block;
