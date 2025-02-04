@@ -223,4 +223,88 @@ main .imagenes-galeria img {
   aspect-ratio: 8/12;
 }
 
+/*estilos para mobile*/
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  nav .navegacion {
+    padding: 0 50px;
+    gap: 2em;
+  }
+  .grid-elementos-visuales section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  .grid-item-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+  .grid-item-index img, .grid-item-index video {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #62159E;
+  }
+  /*Seccion de armas */
+  main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* Restrablecer item 4 */
+  main .grid-container .grid-item-4 {
+    display: block;
+  }
+  /* pagina de personajes */
+  main .personajes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* pagina de trivia y curiosidades */
+  .main-trivia {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  /* pagina de galeria */
+  .main-galeria section div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 100%;
+  }
+  .main-galeria section div img {
+    display: flex;
+    aspect-ratio: 14/18;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/*Estilos para tableta*/
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .grid-container .grid-item-4 {
+    display: block;
+  }
+  /*index*/
+  .grid-elementos-visuales section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-elementos-visuales section div p {
+    margin: 3px 0;
+  }
+  .grid-elementos-visuales section div img, .grid-elementos-visuales section div video {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    object-fit: cover;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

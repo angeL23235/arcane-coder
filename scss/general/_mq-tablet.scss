@@ -1,6 +1,45 @@
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
 
+/*Estilos para tableta*/ 
 @media screen and (min-width:767px) and (max-width:1024px){
-    
+    main{
+        .grid-container{
+            @include grid(grid, repeat(2,1fr));
+        }
+    }
+    main{
+        .grid-container{
+            .grid-item-4{
+                display: block;
+            }
+        }
+    }
+
+    /*index*/
+    .grid-elementos-visuales{
+        section{
+            @include grid(grid, repeat(1,1fr));
+        }
+    } 
+    .grid-elementos-visuales{
+        section{
+            div{
+                p{
+                    margin: 3px 0;
+                }
+            }
+        }
+    }
+    .grid-elementos-visuales{
+        section{
+            div{
+                img,video{
+                    @include flex(flex,column);
+                    gap: 20px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
 }
