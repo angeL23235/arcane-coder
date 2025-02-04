@@ -4,10 +4,10 @@ Este proyecto está inspirado en la popular serie *Arcane*. Es un sitio web inte
 
 ## Tecnologías utilizadas
 
-- ![HTML Logo](https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg) **HTML**: Estructura básica del sitio web.
-- ![CSS Logo](https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg) **CSS**: Estilos y diseño responsivo.
-- ![Git Logo](https://upload.wikimedia.org/wikipedia/commons/3/37/Git-logo.svg) **Git**: Control de versiones para el desarrollo del proyecto.
-- ![GitHub Logo](https://upload.wikimedia.org/wikipedia/commons/9/95/Octicons-mark-github.svg) **GitHub**: Plataforma de alojamiento de código fuente y gestión de repositorios.
+- **HTML**: Estructura básica del sitio web.
+- **CSS**: Estilos y diseño responsivo.
+- **Git**: Control de versiones para el desarrollo del proyecto.
+- **GitHub**: Plataforma de alojamiento de código fuente y gestión de repositorios.
 
 ## Páginas Responsivas
 
@@ -15,3 +15,4 @@ Las páginas del proyecto que están diseñadas para ser completamente **respons
 
 - `index.html`: Página principal que da la bienvenida al proyecto.
 - `armas.html`: Página dedicada a mostrar información sobre las armas en el universo de *Arcane*.
+
