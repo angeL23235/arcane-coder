@@ -1,0 +1,25 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+main{
+    .imagenes-galeria{
+        div{
+            @include grid(grid,repeat(3,1fr));
+            width: 100%;
+            height: auto;
+            gap: 20px;
+        }
+    }
+}
+
+main{
+    .imagenes-galeria{
+        img{
+            filter: drop-shadow(10px 10px 15px aqua);
+            width: 100%;
+            padding: 2.2rem;
+            object-fit: cover;
+            aspect-ratio: 8/12;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*seccion de armas*/
+.armas{ /*contenedor de las armas */
+    text-align: $text-align;
+}
+/* Formato para titulos h2 de armas, personajes, trivias y galeria */
+
+.name-personaje, .name-armas,.titulos-trivia,.contraste-oscuro,.titulos-curiosidades{
+    text-align: $text-align;
+    font-size: 25px;
+    color: $color-alterno;
+    background: linear-gradient(#4B0082,#A855F7);
+    margin-top: 0.2em;
+}
+/* estilo para la seccion de armas de las armas */
+
+main{
+    .armas{
+        @include grid(grid,repeat(3,1fr));
+        gap: 35px;
+    }
+}
+/* estilos para los contenedores y textos con flex */
+main{
+    .armas{
+        .items{
+            @include flex(grid,column);
+            text-align: $text-align;
+            padding: 10px 10px;
+        }
+    }
+}
+
+main{
+    .armas{
+        .item{
+            img{
+                width: 100%;
+                height: 60vh;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+/* espaciado entre imagenes y textos */
+main{
+    .armas{
+        .item{
+            img,h2{
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+
+main{
+    .armas{
+        .grid-item-3{
+            p{
+                padding: 12px;
+            }
+        }
+    }
+}
+/* Formato de los titulos */
+main{
+    .armas{
+        .item{
+            h2{
+                border-radius: 10px;
+            }
+        }
+    }
+}
+/* Ocultar imagen 4  */
+
+main{
+    .armas{
+        .grid-item-4{
+            display: none;
+        }
+    }
+}
+
+nav{
+    .navegacion{
+        padding: 1em;
+    }
+}
+
+main{
+    .banner{
+        p{
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* Estilos para la pagina de personajes */
+/* division de section en columnas */
+main{
+    .personajes{
+        @include grid(grid,repeat(4,1fr));
+        
+        div{
+            @include flex(flex, column);
+            width: auto;
+            gap: 20px;
+            padding: 2rem;
+        }
+    }
+}
+
+
+/* box shadow aplicado a la imagen y su parrafo */
+main{
+    .personajes{
+        div{
+            img,p{
+                box-shadow: 20px 2px 50px red;
+            }
+        }
+    }
+}
+
+main{
+    .personajes{
+        div{
+            img{
+                object-fit: cover;
+                aspect-ratio:20/19;
+                width: 100%;
+            }
+        }
+    }
+}

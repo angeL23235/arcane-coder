@@ -1,2 +1,16 @@
+// Reseteo del html
 @import "general/reset";
+// seccion del index
 @import "general/principal";
+// seccion de armas
+@import "general/seccion-armas";
+// seccion de personajes
+@import "general/personajes";
+// Trivia y curiosidades
+@import "general/trivia-curiosidades";
+// imagenes galeria
+@import "general/galeria";
+// media querys para tablet
+@import "general/mq-tablet";
+// media querys para mobile
+@import "general/mq-mobile"

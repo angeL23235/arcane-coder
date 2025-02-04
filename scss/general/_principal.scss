@@ -13,14 +13,45 @@ a{
     color: $yellowColor;
 }
 
-.navegacion{
-    list-style: none;
-    background-color: $black;
-    text-align: $text-align;
-    @include border(2px, solid,trasnparent);
-}
+
+/* Organizar menu de manera horizontal */
 nav{
     .navegacion{
-        
+        @include flex(flex, $justify:center);
+        gap: 3em;
+        font-size: 1em;
+        list-style: none;
+        background-color: #212121;
+        text-align: $text-align;
+        @include border(2px, solid,transparent);
     }
+}
+
+
+/* separacion a traves de grids */
+.grid-elementos-visuales{
+    section{
+        @include grid(grid,repeat(2,1fr));
+        gap: 10px;
+        padding: 10px;
+        height: auto;
+    }
+}
+/* Estilos de imagen y video */
+.grid-item-index{
+    img, video{
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: $aspectRatio;
+        @include border(3px, solid ,#62159E)
+    }
+}
+/* Formato de los parrafos */
+.parrafos{
+    @include parrafos(center,whitesmoke,linear-gradient(#FF7043,#D32F2F),1rem);
+}
+
+.pie-de-pagina{
+    text-align: center;
+    color: #B0BEC5;
 }
