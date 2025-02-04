@@ -1,11 +1,11 @@
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
 /*estilos para mobile*/ 
-@media screen and (min-width:320px) and (max-width:600px){
+@media screen and (min-width:320px) and (max-width:765px){
     nav{
         .navegacion{
-            padding:0 50px;
-            gap: 2em;
+            @include flex(flex, column);
+            padding: 2px
         }
     }
 
