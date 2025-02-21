@@ -80,10 +80,22 @@ nav div .navegacion img {
 
 .pie-de-pagina {
   display: grid;
-  grid-template-columns: reapet(3, 1fr);
-  text-align: center;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 2;
   color: #B0BEC5;
   height: 15vh;
+}
+
+.redes-pie-pagina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.redes-pie-pagina div {
+  display: flex;
+  gap: 20px;
 }
 
 /*seccion de armas*/
