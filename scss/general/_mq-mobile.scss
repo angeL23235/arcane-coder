@@ -1,73 +1,89 @@
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
-/*estilos para mobile*/ 
-@media screen and (min-width:320px) and (max-width:765px){
-    nav{
-        .navegacion{
+/*estilos para mobile*/
+@media screen and (min-width:320px) and (max-width:767px) {
+    nav {
+        .navegacion {
             @include flex(flex, column);
             padding: 2px
         }
     }
 
-    .grid-elementos-visuales{
-        section{
-            @include grid(grid,1fr,auto);
+    .grid-elementos-visuales {
+        section {
+            @include grid(grid, 1fr, auto);
             gap: 20px;
         }
     }
-    .grid-item-index{
-        @include flex(flex,column, center,center);
+
+    .grid-item-index {
+        @include flex(flex, column, center, center);
         width: 100%;
         gap: 10px;
     }
-    .grid-item-index{
-        img,video{
+
+    .grid-item-index {
+
+        img,
+        video {
             max-width: 100%;
             height: auto;
-            @include border(3px, solid,#62159E )
+            @include border(3px, solid, #62159E)
         }
     }
+
     /*Seccion de armas */
-    main{
-        .grid-container{
-            @include grid(grid,repeat(1,1fr));
+    main {
+        .grid-container {
+            @include grid(grid, repeat(1, 1fr));
         }
     }
+
     /* Restrablecer item 4 */
-    main{
-        .grid-container{
-            .grid-item-4{
+    main {
+        .grid-container {
+            .grid-item-4 {
                 display: block;
             }
         }
     }
+
     /* pagina de personajes */
-    main{
-        .personajes{
-            @include grid(grid, repeat(1, 1fr));
-        }
-    }
-    /* pagina de trivia y curiosidades */
-    .main-trivia{
+    main {
+        height: 100%;
+        width: 95%;
+    .personajes {
         @include grid(grid,repeat(1,1fr));
+        justify-items: center;
+        align-items: center;
+          width: 100%;
+          height: auto;
+          padding: 0 10px;
+        }
+      }
+
+    /* pagina de trivia y curiosidades */
+    .main-trivia {
+        @include grid(grid, repeat(1, 1fr));
         text-align: $text-align;
     }
+
     /* pagina de galeria */
-    .main-galeria{
-        section{
-            div{
-                @include grid(grid, repeat(2,1fr));
+    .main-galeria {
+        section {
+            div {
+                @include grid(grid, repeat(2, 2fr));
                 height: 100vh;
                 width: 100%;
-                img{
+
+                img {
                     @include flex(flex);
-                    aspect-ratio: 14/18;
+                    aspect-ratio: 20/25;
                     width: 100%;
-                    object-fit:cover;    
+                    object-fit: cover;
                 }
             }
         }
     }
 
 }
-

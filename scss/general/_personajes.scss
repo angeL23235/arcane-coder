@@ -2,37 +2,36 @@
 @import "../utilidades/mixin";
 
 /* Estilos para la pagina de personajes */
-/* division de section en columnas */
-main{
-    .personajes{
-        @include grid(grid,repeat(4,1fr));
-        
-        div{
-            @include flex(flex, column);
-            width: auto;
-            gap: 10px 0;
-            padding: 2rem;
-        }
+/* división de section en columnas */
+main {
+@include flex(flex,);
+  width: 95vw;
+  height: 100vh;
+  padding-left: 5%;
+  
+  .personajes {
+    perspective: 500px;
+    @include grid(grid, repeat(4,1fr));
+    gap: 20px;
+    
+    .target-arcane-character {
+      cursor: pointer;
+      width: 100%;
+      color: whitesmoke;
+      transition: all 0.5s ease-in;
+      background: linear-gradient(360deg, #6a1b9a 20%, #9c27b0 50%, #8e24aa 80%);
+      text-align: justify;
+      
+      img {
+        width: 100%;
+        height: 50%;
+        border: 10px solid #800080;
+        cursor: pointer;
+      }
+  
+      &:hover {
+        transform: scale(1.2) rotateY(10deg);
+      }
     }
-}
-
-
-main{
-    .personajes{
-        .target-arcane-character{
-            transition: all 1s ease;
-            cursor:pointer;
-            img{
-                width: 100%;
-                height: 50vh;
-                border: 5px solid #800080;
-                transition: all 0.5s ease;
-                cursor:pointer;
-            }:hover{
-                transform: rotate(360deg);
-            }
-
-               
-        }
-    }
+  }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Fuentes tipografia */
 @font-face {
   font-family: Dragon;
@@ -163,32 +164,35 @@ main .banner p {
 }
 
 /* Estilos para la pagina de personajes */
-/* division de section en columnas */
+/* división de section en columnas */
+main {
+  display: flex;
+  width: 95vw;
+  height: 100vh;
+  padding-left: 5%;
+}
 main .personajes {
+  perspective: 500px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
-main .personajes div {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  gap: 10px 0;
-  padding: 2rem;
-}
-
 main .personajes .target-arcane-character {
-  transition: all 1s ease;
   cursor: pointer;
+  width: 100%;
+  color: whitesmoke;
+  transition: all 0.5s ease-in;
+  background: linear-gradient(360deg, #6a1b9a 20%, #9c27b0 50%, #8e24aa 80%);
+  text-align: justify;
 }
 main .personajes .target-arcane-character img {
   width: 100%;
-  height: 50vh;
-  border: 5px solid #800080;
-  transition: all 0.5s ease;
+  height: 50%;
+  border: 10px solid #800080;
   cursor: pointer;
 }
-main .personajes .target-arcane-character :hover {
-  transform: rotate(360deg);
+main .personajes .target-arcane-character:hover {
+  transform: scale(1.2) rotateY(10deg);
 }
 
 /*Estilos para la pagina trivias y curiosidades  */
@@ -256,7 +260,7 @@ main .imagenes-galeria img {
 }
 
 /*estilos para mobile*/
-@media screen and (min-width: 320px) and (max-width: 765px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   nav .navegacion {
     display: flex;
     flex-direction: column;
@@ -276,7 +280,8 @@ main .imagenes-galeria img {
     width: 100%;
     gap: 10px;
   }
-  .grid-item-index img, .grid-item-index video {
+  .grid-item-index img,
+  .grid-item-index video {
     max-width: 100%;
     height: auto;
     border: 3px solid #62159E;
@@ -291,9 +296,18 @@ main .imagenes-galeria img {
     display: block;
   }
   /* pagina de personajes */
+  main {
+    height: 100%;
+    width: 95%;
+  }
   main .personajes {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
   }
   /* pagina de trivia y curiosidades */
   .main-trivia {
@@ -304,13 +318,13 @@ main .imagenes-galeria img {
   /* pagina de galeria */
   .main-galeria section div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     height: 100vh;
     width: 100%;
   }
   .main-galeria section div img {
     display: flex;
-    aspect-ratio: 14/18;
+    aspect-ratio: 20/25;
     width: 100%;
     object-fit: cover;
   }
@@ -342,6 +356,17 @@ main .imagenes-galeria img {
     flex-direction: column;
     gap: 20px;
     object-fit: cover;
+  }
+  /*Personajes*/
+  main {
+    height: 100%;
+  }
+  main .personajes {
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
   }
 }
 
