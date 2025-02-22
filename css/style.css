@@ -260,7 +260,7 @@ main .imagenes-galeria img {
 }
 
 /*estilos para mobile*/
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 765px) {
   nav .navegacion {
     display: flex;
     flex-direction: column;
