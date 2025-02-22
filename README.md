@@ -17,4 +17,4 @@ Las páginas del proyecto que están diseñadas para ser completamente **respons
 - `armas.html`: Página dedicada a mostrar información sobre las armas en el universo de *Arcane*.
 
 ## Link De Pagina En Netlify
-[Ir a la página en Netlify](https://arcane-angel-code.netlify.app)
+[Arcane-netlify](arcane-angel-code.netlify.app)
