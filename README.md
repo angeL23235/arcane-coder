@@ -16,5 +16,5 @@ Las páginas del proyecto que están diseñadas para ser completamente **respons
 - `index.html`: Página principal que da la bienvenida al proyecto.
 - `armas.html`: Página dedicada a mostrar información sobre las armas en el universo de *Arcane*.
 
-## Link De Pagina En Netlify
+## Link De Pagina En El Servidor Netlify
 [Ir a Arcane page netlify😎](https://arcane-angel-developer.netlify.app)
