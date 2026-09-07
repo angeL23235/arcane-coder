@@ -1,20 +1,32 @@
-# Proyecto Arcane
+# Arcane - Sitio Web Temático
 
-Este proyecto está inspirado en la popular serie *Arcane*. Es un sitio web interactivo donde los usuarios pueden explorar diferentes secciones relacionadas con la serie, como personajes, trivia, y curiosidades. El objetivo principal de este proyecto es ofrecer una experiencia visual atractiva y responsiva utilizando tecnologías web modernas.
+Sitio web interactivo inspirado en la serie Arcane. Exploración de personajes, armas y contenido relacionado con la serie.
 
-## Tecnologías utilizadas
+## Tecnologías
 
-- **HTML**: Estructura básica del sitio web.
-- **CSS**: Estilos y diseño responsivo.
-- **Git**: Control de versiones para el desarrollo del proyecto.
-- **GitHub**: Plataforma de alojamiento de código fuente y gestión de repositorios.
+- HTML5
+- CSS3
+- JavaScript
 
-## Páginas Responsivas
+## Características
 
-Las páginas del proyecto que están diseñadas para ser completamente **responsivas** (adaptables a diferentes tamaños de pantalla) son:
+- Diseño responsive
+- Páginas interactivas
+- Información sobre personajes
+- Información sobre armas
+- Navegación intuitiva
 
-- `index.html`: Página principal que da la bienvenida al proyecto.
-- `armas.html`: Página dedicada a mostrar información sobre las armas en el universo de *Arcane*.
+## Estructura del Proyecto
 
-## Link De Pagina En El Servidor Netlify
-[Ir a Arcane page netlify😎](https://arcane-angel-developer.netlify.app)
+```
+arcane-coder/
+├── index.html       # Página principal
+├── armas.html       # Página de armas
+├── css/             # Estilos
+├── js/              # Scripts
+└── img/             # Imágenes
+```
+
+## Demo
+
+https://arcane-angel-developer.netlify.app
